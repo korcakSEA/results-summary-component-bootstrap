@@ -12,6 +12,12 @@
   --clr-primary-green-teal: hsl(166, 100%, 37%);
   --clr-primary-cobalt-blue: hsl(234, 85%, 45%);
 
+  /* plain hsl values */
+  --clr-accent-1: 0, 100%, 67%;
+  --clr-accent-2: 39, 100%, 56%;
+  --clr-accent-3: 166, 100%, 37%;
+  --clr-accent-4: 234, 85%, 45%;
+
   /* Gradients (colors) */
   --clr-gradient-light-slate-blue: hsl(252, 100%, 67%);
   --clr-gradient-light-royal-blue: hsl(241, 81%, 54%);
@@ -48,7 +54,7 @@
   --font-xxl:5rem;
 
   /* Font */
-  --font-family-hanken-grotesk: 'Hanken Grotesk', sans-serif;
+  --font-family-hanken-grotesk: 'HankenGrotesk', sans-serif;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
@@ -70,6 +76,69 @@ body{
 
 .result{
   background: var(--gradient-bg) ;
+  color:hsla(0, 0%, 100%, 0.6) ;
+}
+
+.result-score{
+  display: grid;
+  place-content: center;
+  /* Above is another technique to center */
+  width: 12rem;
+  aspect-ratio: 1/1;/* to have a perfect circle*/
+  margin-inline: auto;
+  background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+}
+
+.result-score span {
+  font-size: var(--font-xxl);
+}
+
+.result-rank{
+  color: var(--natural-White);
+  font-size: var(--font-xl);
+  font-weight: var(--fw-bold);
+}
+
+/* All removed stroke values will be re-defined below*/
+.summary-item svg{
+    stroke: hsl(var(--item-color));
+}
+
+.summary-item{
+  background-color: hsl(var(--item-color), .1);
+}
+
+.summary-item__title {
+  color: hsl(var(--item-color));
+} 
+
+.summary-item[data-item-type="accent-1"] {
+  --item-color: var(--clr-accent-1);/*all accent values defined as plain values, without hsl brackets (). 
+  So the values can be used in every variable defined.Kinde of globally defined. 
+  --clr-accent-1: 0, 100%, 67%; Now --item-color: 0, 100%, 67%. 
+  So in .summary-item__title class it becomes title and here .summary-item svg, it becomes svg color. 
+  Here it comes the advantage of using attribute selector.
+  So by changing any value here: --clr-accent-1: 0, 100%, 67%, all background,
+  title and svg color will be changed for specific summary item*/
+}
+.summary-item[data-item-type="accent-2"] {
+  --item-color: var(--clr-accent-2);
+}
+.summary-item[data-item-type="accent-3"] {
+  --item-color: var(--clr-accent-3);
+}
+.summary-item[data-item-type="accent-4"] {
+  --item-color: var(--clr-accent-4);
+}
+
+.summary-score {
+  font-weight: var(--fw-bold);
+  color: hsl(224, 30%, 27%, .5);
+}
+
+.summary-score span {
+  color: hsl(224, 30%, 27%);
 }
 
 
@@ -86,4 +155,20 @@ body{
 .btn:focus{
   background: var(--gradient-bg);
   color: var(--clr-neutral-white);
+}
+
+
+@media (min-width:576px) {
+
+  .container{
+    min-height: 100vh;
+  }
+
+  .rounded-sm-custom {
+    border-radius: 2rem; /* or whatever you want */
+  }
+
+  .box-shadow-custom {
+    box-shadow: .5rem 1rem 3rem hsla(224, 30%, 27%, .3);
+  }
 }

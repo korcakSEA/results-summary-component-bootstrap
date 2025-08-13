@@ -18,45 +18,45 @@
 </head>
 <body>
 
-  <article class="container">
-    <div class="result-summary row bg-white">
+  <article class="container d-sm-flex justify-content-md-center align-items-md-center">
+    <div class="result-summary row bg-white overflow-hidden rounded-sm-custom box-shadow-custom ">
       <!-- Result -->
-      <div class="result d-flex flex-column align-items-center col-12 col-sm-6 rounded-bottom p-4">
+      <div class="result text-center d-flex flex-column align-items-center gap-4 col-12 col-sm-6 rounded-bottom-5 p-4 rounded-sm-custom">
         <h2 class="fs-2 fw-bold">Your Result</h2>
         <p class="result-score">
-          <span class="text-white">76</span>
+          <span class="text-white d-block lh-1 fw-bolder">76</span>
           of 100
         </p>
         <div class="d-flex flex-column align-items-center text-center">
-          <p class="text-white fs-1 ">Great</p>
+          <p class="text-white fs-1 fw-bold">Great</p>
           <p>You scored higher than 65% of the people who have taken these tests.</p>
         </div>
       </div>
       <!-- Summary -->
-      <div class="summary col-12 col-sm-6 d-flex flex-column alig  p-4">
-        <h2 class="fs-2 fw-bold text-center">Summary</h2>
+      <div class="summary col-12 col-sm-6 d-flex flex-column gap-4 p-4">
+        <h2 class="fs-2 fw-bold text-md-center">Summary</h2>
         <!-- Reaction Stat -->
-        <div class="d-flex align-items-center gap-3 p-3" data-item-type="accent-1">
-          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
-          <h3 class="m-0 fs-4">Reaction</h3>
+        <div class="summary-item d-flex align-items-center gap-3 p-3 rounded-2" data-item-type="accent-1">
+          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+          <h3 class="summary-item__title  m-0 fw-bold fs-4">Reaction</h3>
           <p class="mb-0 ms-auto"><span class="fw-bold">80</span> / 100</p>
         </div>
         <!-- Memory Stat -->
-        <div class="d-flex align-items-center gap-3 p-3" data-item-type="accent-2">
-          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>
-          <h3 class="m-0 fs-4">Memory</h3>
+        <div class="summary-item d-flex align-items-center gap-3 p-3 rounded-2" data-item-type="accent-2">
+          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>
+          <h3 class="summary-item__title m-0 fw-bold fs-4">Memory</h3>
           <p class="mb-0 ms-auto"><span class="fw-bold">92</span> / 100</p>
         </div>
         <!-- Verbal Stat -->
-        <div class="d-flex align-items-center gap-3 p-3" data-item-type="accent-3">
-          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>
-          <h3 class="m-0 fs-4">Verbal</h3>
+        <div class="summary-item d-flex align-items-center gap-3 p-3 rounded-2" data-item-type="accent-3">
+          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>
+          <h3 class="summary-item__title m-0 fw-bold fs-4">Verbal</h3>
           <p class="mb-0 ms-auto"><span class="fw-bold">61</span> / 100</p>
         </div>
         <!-- Visual Stat -->
-        <div class="d-flex align-items-center gap-3 p-3" data-item-type="accent-4">
-          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>
-          <h3 class="m-0 fs-4">Visual</h3>
+        <div class="summary-item d-flex align-items-center gap-3 p-3 rounded-2" data-item-type="accent-4">
+          <svg class="img-fluid d-block" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>
+          <h3 class="summary-item__title m-0 fw-bold fs-4">Visual</h3>
           <p class="mb-0 ms-auto"><span class="fw-bold">72</span> / 100</p>
         </div>
         <!-- Button -->
