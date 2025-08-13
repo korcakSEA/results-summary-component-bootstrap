@@ -1,0 +1,89 @@
+@font-face{
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  /* Primary */
+  --clr-primary-light-red: hsl(0, 100%, 67%);
+  --clr-primary-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-primary-green-teal: hsl(166, 100%, 37%);
+  --clr-primary-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients (colors) */
+  --clr-gradient-light-slate-blue: hsl(252, 100%, 67%);
+  --clr-gradient-light-royal-blue: hsl(241, 81%, 54%);
+  --clr-gradient-violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --clr-gradient-persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* Gradients (ready to use) */
+  --gradient-bg: linear-gradient(
+    to bottom,
+    var(--clr-gradient-light-slate-blue),
+    var(--clr-gradient-light-royal-blue)
+  );
+  --gradient-circle: linear-gradient(
+    to bottom,
+    var(--clr-gradient-violet-blue-circle),
+    var(--clr-gradient-persian-blue-circle)
+  );
+
+  /* Neutral */
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-pale-blue: hsl(221, 100%, 96%);
+  --clr-neutral-light-lavender: hsl(241, 100%, 89%);
+  --clr-neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Typography */
+  --font-size-paragraph: 18px;
+
+  /* Font sizes */
+  --font-xs:1.125rem;
+  --font-sm:1.25rem;
+  --font-md:1.5rem;
+  --font-lg:1.75rem;
+  --font-xl:2rem;
+  --font-xxl:5rem;
+
+  /* Font */
+  --font-family-hanken-grotesk: 'Hanken Grotesk', sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+}
+
+
+
+body{
+  font-family: var(--font-family-hanken-grotesk);
+  background-color: var(--clr-neutral-pale-blue);
+}
+
+/* ===Gloabal Styling=== */
+
+
+.result-summary{
+  max-width: 46rem;
+}
+
+.result{
+  background: var(--gradient-bg) ;
+}
+
+
+/* === Utility Styling === */
+
+.btn{
+  background-color: var(--clr-neutral-dark-gray-blue);
+  color: var(--clr-neutral-white);
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus{
+  background: var(--gradient-bg);
+  color: var(--clr-neutral-white);
+}
